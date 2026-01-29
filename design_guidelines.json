@@ -1,0 +1,154 @@
+{
+  "identity": {
+    "name": "Forgeit Design System",
+    "persona": "E1: The Anti-AI Designer",
+    "archetype": "The Performance Pro x Swiss High-Contrast",
+    "vibe": "Smart City, Digital Infrastructure, Youthful Professionalism",
+    "principles": [
+      "Fusion over Imitation: Mix 'Smart City' tech aesthetics with 'Community' warmth.",
+      "Emotion First: Every interaction should feel like a 'connection' being made.",
+      "Content is King: Data and profiles are the heroes; UI is the stage.",
+      "Zoom In: Focus on faces and connections.",
+      "Negative Space: Use whitespace to create a 'premium' feel."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "heading": "font-bold tracking-tight",
+      "subheading": "font-medium tracking-normal",
+      "body": "font-normal leading-relaxed"
+    },
+    "sizes": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl",
+      "h2": "text-3xl md:text-4xl lg:text-5xl",
+      "h3": "text-2xl md:text-3xl",
+      "body": "text-base md:text-lg",
+      "small": "text-sm text-muted-foreground"
+    },
+    "installation": "Import fonts via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Electric Indigo",
+        "light": "#4F46E5",
+        "dark": "#6366F1",
+        "description": "Vibrant, youthful, yet professional. Used for primary actions and brand moments."
+      },
+      "secondary": {
+        "name": "Smart City Slate",
+        "light": "#F1F5F9",
+        "dark": "#1E293B",
+        "description": "Backgrounds and secondary elements."
+      },
+      "accent": {
+        "name": "Connection Teal",
+        "light": "#0EA5E9",
+        "dark": "#38BDF8",
+        "description": "Used for success states, active connections, and highlights."
+      },
+      "background": {
+        "light": "#FFFFFF",
+        "dark": "#020617",
+        "description": "Clean white for light mode, deep void blue for dark mode (not pure black)."
+      }
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-blue-600 via-indigo-500 to-purple-500",
+      "subtle": "bg-gradient-to-b from-transparent to-slate-50/50 dark:to-slate-900/50",
+      "glass": "bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl border-white/20"
+    }
+  },
+  "layout": {
+    "grid_system": {
+      "marketing": "grid grid-cols-1 md:grid-cols-12 gap-8 (The Tetris Grid)",
+      "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-6 (High Density)",
+      "cards": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    },
+    "spacing": {
+      "container": "container mx-auto px-4 md:px-8",
+      "section": "py-20 md:py-32",
+      "card_padding": "p-6 md:p-8"
+    },
+    "radius": {
+      "default": "rounded-xl",
+      "large": "rounded-2xl",
+      "button": "rounded-full"
+    }
+  },
+  "components": {
+    "header": {
+      "style": "fixed top-0 left-0 right-0 z-50 border-b border-border/40",
+      "glass": "bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60",
+      "nav_items": "text-sm font-medium transition-colors hover:text-primary"
+    },
+    "cards": {
+      "style": "group relative overflow-hidden rounded-xl border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md hover:border-primary/50",
+      "hover_effect": "hover:-translate-y-1 duration-300"
+    },
+    "buttons": {
+      "primary": "rounded-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20",
+      "secondary": "rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+      "ghost": "rounded-full hover:bg-accent hover:text-accent-foreground"
+    },
+    "inputs": {
+      "style": "rounded-lg border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/10 dark:bg-black/10 border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]",
+    "shadows": {
+      "soft": "shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1)]",
+      "glow": "shadow-[0_0_15px_rgba(99,102,241,0.5)]"
+    },
+    "textures": "bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"
+  },
+  "images": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1758270705518-b61b40527e76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwY29sbGVnZSUyMHN0dWRlbnRzJTIwY29sbGFib3JhdGluZyUyMGxhcHRvcHxlbnwwfHx8fDE3Njk2NjAwNzN8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Diverse students collaborating on a project",
+      "category": "hero_main"
+    },
+    "community": {
+      "url": "https://images.unsplash.com/photo-1758270705172-07b53627dfcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwY29sbGVnZSUyMHN0dWRlbnRzJTIwY29sbGFib3JhdGluZyUyMGxhcHRvcHxlbnwwfHx8fDE3Njk2NjAwNzN8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Students gathered around a laptop",
+      "category": "community_feature"
+    },
+    "networking": {
+      "url": "https://images.unsplash.com/photo-1696861270495-7f35c35c3273?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBuZXR3b3JraW5nJTIwZXZlbnQlMjBoYW5kc2hha2V8ZW58MHx8fHwxNzY5NjYwMDc1fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Close up of handshake",
+      "category": "networking_feature"
+    },
+    "smart_city_bg": {
+      "url": "https://images.unsplash.com/photo-1644329770639-1a20809b82a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGJsdWUlMjBzbWFydCUyMGNpdHklMjBkaWdpdGFsJTIwY29ubmVjdGlvbnxlbnwwfHx8fDE3Njk2NjAwNzd8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract blue smart city lines",
+      "category": "background_abstract"
+    }
+  },
+  "motion": {
+    "scroll": "Use 'lenis' for smooth scrolling. Add 'scroll-smooth' to html tag as fallback.",
+    "transitions": "transition-all duration-300 ease-in-out",
+    "hover": "hover:scale-[1.02] active:scale-[0.98]",
+    "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-700"
+  },
+  "accessibility": {
+    "contrast": "Ensure text meets WCAG AA standards. Use 'text-foreground' on 'bg-background'.",
+    "focus": "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+    "reduced_motion": "motion-reduce:transition-none motion-reduce:animate-none"
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Bootstrap' layouts. Use asymmetry and negative space.",
+    "Dark mode is mandatory. Ensure all colors have dark mode equivalents.",
+    "Use 'data-testid' on all interactive elements.",
+    "Do not use 'transparent' backgrounds for dropdowns or overlays; use glassmorphism.",
+    "Use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Images must be used from the provided list. Do not use placeholders."
+  ],
+  "instructions_to_main_agent": "You are building 'Forgeit', a smart-city themed networking platform. Use the provided colors, fonts, and images. Implement the 'Tetris Grid' for the landing page and 'High Density Grid' for the dashboard. Ensure the header is translucent and sticky. Use Shadcn UI components but customize them with the 'rounded-xl' and 'glassmorphism' styles defined here."
+}
